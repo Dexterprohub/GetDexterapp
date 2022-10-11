@@ -36,7 +36,7 @@ export default function App() {
                 </div>
             </div>
 
-            <div className={`   ${styles.flexCenter}`}>
+            <div className={` ${styles.flexCenter}`}>
                 <div className={`${styles.boxWidth}`}>
                     <FeatureThree />
                 </div>
