@@ -4,10 +4,10 @@ import {logo, instagram, twitter, youtube, linkedin, appleBadge, androidBadge, s
 export default function Footer(){
     return(
 
-        <div className="absolute flex flex-row justify-between items-start text-white bg-black w-full gap-[30px] pt-[100px] px-[40px] pb-[36px] mt-[200px]">
+        <div className=" flex flex-col absolute  justify-between items-start text-white bg-black w-full py-[40px] px-[20px] mt-[400px]  ">
 
-            <div className="bg-primary absolute bottom-[286px] flex flex-row items-center justify-between text-white rounded-3xl w-[80%] gap-[41px] p-[54px] "> 
-                <div className="flex flex-row items-start justify-between gap-[41px] ">
+            <div className="bg-primary absolute bottom-[386px] flex flex-col items-center justify-between text-white rounded-3xl sm:w-[80%] mx-auto w-[90%] gap-[41px] p-[40px] "> 
+                <div className="flex flex-col items-start justify-between gap-[41px] ">
                     <div className="flex flex-col gap-[28px]">
                         <h2 className="font-manrope font-bold text-[20px] leading-[50px] tracking-[0.2px]">
                             Stay updated with our Newsletter
@@ -29,7 +29,7 @@ export default function Footer(){
                 </div>
             </div>
 
-            <div className="flex flex-row justify-between w-[80vw] h-[206px]">
+            <div className="flex flex-col-reverse justify-between gap-[40px] ">
 
                 <div className="flex flex-col gap-[24px]">
                     <div className="flex flex-row justify-start items-center gap-[24px]">
@@ -38,7 +38,7 @@ export default function Footer(){
                     </div>
 
 
-                    <small className="text-[14px] leading-[24px] text-shadeGrey2" >
+                    <small className="absolute bottom-0 text-[14px] leading-[24px] text-shadeGrey2" >
                     &#169; 2022 Dexterprolimited. All rights reserved
                     </small>
 
@@ -49,14 +49,14 @@ export default function Footer(){
                         <img src={linkedin} alt="linkedin" />
                     </div>
 
-                    <div className="flex flex-row gap-[24px] justify-start items-center w-[171px] h-[56px]">
+                    <div className="hidden  sm:flex flex-col gap-[24px] justify-start items-center w-[101px] h-[56px]">
                         <img src={appleBadge} alt=""  className=" border border-solid rounded-[32px] border-white"/>
                         <img src={androidBadge} alt=""  className=" border border-solid rounded-[32px] border-white"/>
                     </div>
                 </div>
 
-                <div className="flex flex-row gap-[64px] items-start">
-                    <div className="w-[160px] gap-[12px] flex flex-col items-start">
+                <div className=" w-full flex flex-row items-start justify-between">
+                    <div className=" w-1/2 gap-[12px] flex flex-col items-start">
                         <h2 className="font-manrope font-bold text-[20px] leading-[26px]">Quick Links</h2>
 
                         <div className="flex flex-col gap-[12px] font-manrope text-shadeGrey3">
@@ -68,8 +68,8 @@ export default function Footer(){
                         </div>
                        
                     </div>
-
-                    <div className="w-[255px] gap-[24px] flex flex-col items-start ">
+ 
+                    <div className="w-1/2 gap-[24px] flex flex-col items-start ">
                         <h2 className="text-[20px] leading-[26px] text-white">Contact</h2>
 
                         <div className="flex flex-row items-center justify-between gap-[10px]">
