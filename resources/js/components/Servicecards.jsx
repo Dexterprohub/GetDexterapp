@@ -1,14 +1,14 @@
 import React from "react";
 import {electricalI, fashiondesignI, fooddeliveryI, groceryI, hairstyleI, laundryI, makeupI, plumbingI} from "../assets"
 import Cards from "./Cards";
-export default function ServiceCards() {
+export default function ServiceCards(props) {
 
     return (
         <div className="flex flex-col bg-offWhite px-[20px] py-[40px] md:py-[96px] justify-center items-center  gap-10 ">
 
             <div className="relative sm:w-[595px]  gap-2 flex flex-col mx-auto items-center text-center">
-                <h2 className="md:text-[40px]  text-[30px]  leading-[50px] font-bold">Discover Our Services</h2>
-                <p className="w-full sm:text-[18px] leading-[25px] text-[16px] text-grey">We cover a whole lot of services and we are still adding more to the list
+                <h2 className="md:text-[40px]  text-[30px]  leading-[50px] font-bold">{props.heading}</h2>
+                <p className="w-full sm:text-[18px] leading-[25px] text-[16px] text-grey">{props.text}
                 </p>
             </div>
 

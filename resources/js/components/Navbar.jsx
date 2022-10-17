@@ -2,7 +2,10 @@ import { useState, React} from 'react';
 
 import styles from '../style';
 import {logo, menu, close} from "../assets";
-import navLinks from "../constants"
+import navLinks from "../constants";
+import { Link } from 'react-router-dom';
+// import { BrowserRouter, Routes, Link } from 'react-router-dom';
+
 
 
 export default function Navbar() {
@@ -21,13 +24,14 @@ export default function Navbar() {
                 {navLinks.map((nav, index) => (
                     <li key={nav.id}
                         className={`font-normal cursor-pointer text-[16px] text-white ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}  `}>
-                            <a href={`#${nav.id}`}>{nav.title}</a>
+                           <Link to={nav.id}>{nav.title}</Link>
                         </li>
                 ))}
 
             </ul>
 
             <div className='sm:hidden flex flex-1 justify-end items-center'>
+               
                 <img src={ toggle ? close : menu }  alt="menu" className='w-[28px] h-[28px] object-container' onClick={() => setToggle((prev) => !prev)} />
 
                 <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-primary absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar] `}>

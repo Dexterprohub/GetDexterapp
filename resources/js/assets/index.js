@@ -26,7 +26,7 @@ import linkedin from "./linkedin.png";
 import supportI from "./24-support-icon.png";
 import locationI from "./location-icon.png";
 import headphoneI from "./headphone-icon.png";
-
+import woman from "./woman.png";
 
 
 
@@ -58,5 +58,6 @@ export  {
     linkedin,
     supportI,
     locationI,
-    headphoneI
+    headphoneI,
+    woman
 };

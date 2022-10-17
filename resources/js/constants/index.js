@@ -1,21 +1,21 @@
 const navLinks = [
     {
-        "id": "home",
+        "id": "/",
         "title": "Home" 
     },
 
     {
-        "id": "about",
+        "id": "/about",
         'title': "About",
     },
 
     {
-        "id": "forbusiness",
+        "id": "/for-business",
         "title": "For Business" 
     },
 
     {
-        "id": "faqs",
+        "id": "/faqs",
         'title': "FAQs",
     }
 ];

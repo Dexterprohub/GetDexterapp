@@ -1,55 +1,27 @@
 import React from 'react';
 import styles from '../style';
-import { Hero, Servicecards, Feature, FeatureTwo, FeatureThree, Footer } from './';
+import {Home, About, FAQs, Feature, FeatureTwo, FeatureThree, Footer, ForBusiness } from './';
 import {downloadbtn, iPhone, selectI, signupI, starI} from "../assets";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter, Route, Router } from 'react-router-dom';
+
 
 export default function App() {
+
     return (
-        <div className='w-full overflow-hidden font-manrope bg-white'>
-            {/* <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
-                <div className={` bg-primary ${styles.boxWidth}`}>
-                    <Navbar />
-                </div>
-            </div> */}
-            <div className={`${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <Hero />           
-                </div>
-            </div>
-            
-            <div className={` ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <Servicecards />
 
-                </div>
-            </div>
-            <div className={`   ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <Feature />
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='for-business' element={<ForBusiness />} />
+                <Route path='about' element={<About />} />
+                <Route path='faqs' element={<FAQs />} />
+            </Routes>
 
-                </div>
-            </div>
-            <div className={`   ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <FeatureTwo phone={iPhone} heading="Get started with Dexter" icon1={downloadbtn} icon2={signupI} icon3={selectI} icon4={starI} title1="Download Dexter from the Appstore or Play Store" title2="Sign up and create your profile" title3="Select your prefered service." title4="Sit back and wait for your task to be completed." text="We might have to verify your request. You’ll get notified when we match you with a service provider." />
+           
+        </BrowserRouter>
 
-                </div>
-            </div>
-
-            <div className={` ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <FeatureThree />
-                </div>
-
-            </div>
-
-            <div className={`   ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                    <Footer />
-                </div>
-                
-            </div>
-        </div>
+        
     );
 }
 

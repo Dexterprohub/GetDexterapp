@@ -6,7 +6,7 @@ export default function Footer(){
 
         <div className=" flex flex-col absolute  justify-between items-start text-white bg-black w-full py-[40px] px-[20px] sm:px-[40px] mt-[450px] md:mt-[350px] ">
 
-            <div className="bg-primary absolute bottom-[490px] sm:bottom-[180px] md:bottom-[260px] flex md:flex-row flex-col items-center justify-between text-white rounded-3xl left-[20px] sm:left-[40px] w-[90%] gap-[41px] p-[40px] md:p-[64px] "> 
+            <div className="bg-primary absolute bottom-[490px] sm:bottom-[280px] md:bottom-[260px] flex md:flex-row flex-col items-center justify-between text-white rounded-3xl left-[20px] sm:left-[40px] lg:left-[80px] w-[90%] gap-[41px] p-[40px] md:p-[64px] lg:p-[100px] "> 
                 <div className="flex md:flex-row flex-col items-start justify-between gap-[41px] ">
                     <div className="flex flex-col gap-[28px]">
                         <h2 className="font-manrope font-bold sm:text-[40px] text-[20px] leading-[50px] tracking-[0.2px]">

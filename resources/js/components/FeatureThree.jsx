@@ -3,7 +3,7 @@ import {hands} from "../assets";
 
 export default function FeatureThree(){
     return (
-        <div className="bg-primary bg-vector w-full py-[96px] px-[40px] lg:px-[135px] ">
+        <div className="bg-primary bg-vector w-full py-[96px] px-[40px] lg:px-[155px] ">
             <div className="flex flex-col sm:flex-row justify-around items-center gap-[48px]">
                 <div className="flex flex-col justify-center items-start w-[80vw] gap-8">
                     
